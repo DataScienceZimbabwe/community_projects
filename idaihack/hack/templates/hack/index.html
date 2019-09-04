@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idai Hack</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <h1>Early Warning Cyclone Data</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Area</th>
+      <th scope="col">GPS Cordinates</th>
+      <th scope="col">Demographic Data</th>
+        <th scope="col">Satellite Images</th>
+      <th scope="col">News Articles</th>
+        <th scope="col">Geo Data</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% if obj %}
+      {% for a in obj %}
+        <tr>
+          <th scope="row">{{ a.area }}</th>
+          <td>{{ a.gps_cordinates }}</td>
+          <td>{{ a.demographic_data }} people</td>
+          <td>{{ a.satellite_images }}</td>
+          <td>{{ a.news_articles }}</td>
+            <td>{{ a.geo_data }}</td>
+        </tr>
+      {% endfor %}
+  {% else %}
+    <p>No cyclone data available</p>
+  {% endif %}
+
+  </tbody>
+</table>
+
+</body>
+</html>
