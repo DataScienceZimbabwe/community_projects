@@ -27,6 +27,3 @@ Uses of such a system;
 - No linguistics subject matter experts (SMEs) within the data science community. We are going to need the help of people that understand our local languages deeply
 - lack of credible local language corpus
 
-
-english AIs already exist so just create a dictionary that will map every english word to a corresponding Shona one processing will be done in English just like how a person can think in Shona then speak in English 
-PS this is a laymen's idea
