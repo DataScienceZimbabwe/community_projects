@@ -5,6 +5,7 @@ The system currently comprises of:
 - Predictive Model
 
 The plan is to add other features as contributed by the community. Below are some of the features brainstormed at the session that could be included at a later stage. 
+
 	•	Path detection
 	•	Notification and communication (social media etc)
 	•	Property protection
